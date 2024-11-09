@@ -1,0 +1,159 @@
+<div class="sidebar-title">
+    <h4 class="sidebar-heading">Navigation</h4>
+</div>
+
+<ul class="nav flex-column mb-auto sidebar-menu" style="padding-left: 10px; padding-right: 10px;">
+    <!-- Dashboard Section -->
+    <li class="nav-item mb-3">
+        <a class="nav-link sidebar-link d-flex align-items-center gap-2 active" aria-current="page" href="{% url 'summary' %}">
+            <i class="fas fa-home"></i> Dashboard
+        </a>
+    </li>
+
+    <!-- Financial Section -->
+    <div class="sidebar-section-title">Financial</div>
+    <li class="nav-item d-flex justify-content-between align-items-center">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'expenses' %}">
+            <i class="fas fa-receipt"></i> Expenses
+        </a>
+        <a class="btn btn-link btn-add" href="{% url 'add-expenses' %}" aria-label="Add a new expense">
+            <i class="fas fa-plus-circle"></i>
+        </a>
+    </li>
+
+    <li class="nav-item d-flex justify-content-between align-items-center">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'income' %}">
+            <i class="fas fa-dollar-sign"></i> Incomes
+        </a>
+        <a class="btn btn-link btn-add" href="{% url 'add-Income' %}" aria-label="Add new Income">
+            <i class="fas fa-plus-circle"></i>
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'stats' %}">
+            <i class="fas fa-file-alt"></i> Expenses Summary
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'stat' %}">
+            <i class="fas fa-file-alt"></i> Incomes Summary
+        </a>
+    </li>
+
+    <!-- Maintenance Section -->
+    <div class="sidebar-section-title">Maintenance</div>
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'list_forum_tasks' %}">
+            <i class="fas fa-tools"></i> Maintenance
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'sta' %}">
+            <i class="fas fa-stopwatch"></i> Machine Downtime 
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'sta' %}">
+            <i class="fas fa-chart-pie"></i> Category Breakdown
+        </a>
+    </li>
+
+    <!-- Settings Section -->
+    <div class="sidebar-section-title">Settings</div>
+    <li class="nav-item">
+        <a class="nav-link d-flex align-items-center gap-2 sidebar-link" href="{% url 'preferences' %}">
+            <i class="fas fa-cog"></i> General
+        </a>
+    </li>
+
+    <!-- Logout Link at the Bottom -->
+    <li class="nav-item mt-auto">
+        <a class="nav-link d-flex align-items-center gap-2 text-danger" href="{% url 'logout' %}">
+            <i class="fas fa-sign-out-alt"></i> Logout
+        </a>
+    </li>
+</ul>
+
+<style>
+    /* Sidebar Title */
+    .sidebar-title {
+        padding: 15px;
+        font-size: 1.5rem;
+        font-weight: 40;
+        color: #007bff;
+    }
+
+    .sidebar-heading {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        color: #007bff;
+    }
+
+    /* Section Titles */
+    .sidebar-section-title {
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        color: #007bff;
+        padding: 40px 4;
+        margin-top: 15px;
+        border-bottom: 2px solid #e9ecef;
+    }
+
+    /* Link Styling */
+    .sidebar-link {
+        color: #333;
+        font-weight: 100;
+        padding: 10px;
+        transition: background-color 0.3s, color 0.3s;
+        border-radius: 5px;
+    }
+
+    .sidebar-link:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .sidebar-link.active {
+        background-color: #0056b3; /* Darker blue for active link */
+        color: white;
+    }
+
+    /* Icon Size */
+    .sidebar-link i {
+        font-size: 1.2rem;
+    }
+
+    /* Add Button Styling */
+    .btn-add {
+        color: #007bff;
+        transition: color 0.3s;
+    }
+
+    .btn-add:hover {
+        color: #0056b3;
+    }
+
+    /* Logout Styling */
+    .nav-link.text-danger {
+        color: #dc3545;
+        font-weight: 600;
+    }
+
+    .nav-link.text-danger:hover {
+        background-color: #f8d7da;
+    }
+
+    /* Space between Items */
+    .nav-item {
+        margin-bottom: 10px;
+    }
+
+    /* Ensure Logout Stays at Bottom */
+    .mt-auto {
+        margin-top: auto;
+    }
+</style>
