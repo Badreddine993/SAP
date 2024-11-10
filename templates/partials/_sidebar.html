@@ -1,3 +1,5 @@
+{% block content %}
+{% load static %}
 <div class="sidebar-title">
     <h4 class="sidebar-heading">Navigation</h4>
 </div>
@@ -77,83 +79,9 @@
         </a>
     </li>
 </ul>
+{% endblock %}
 
-<style>
-    /* Sidebar Title */
-    .sidebar-title {
-        padding: 15px;
-        font-size: 1.5rem;
-        font-weight: 40;
-        color: #007bff;
-    }
 
-    .sidebar-heading {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-        color: #007bff;
-    }
+<link rel="stylesheet" href="{% static 'css/nav.css'%}">
 
-    /* Section Titles */
-    .sidebar-section-title {
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        color: #007bff;
-        padding: 40px 4;
-        margin-top: 15px;
-        border-bottom: 2px solid #e9ecef;
-    }
 
-    /* Link Styling */
-    .sidebar-link {
-        color: #333;
-        font-weight: 100;
-        padding: 10px;
-        transition: background-color 0.3s, color 0.3s;
-        border-radius: 5px;
-    }
-
-    .sidebar-link:hover {
-        background-color: #007bff;
-        color: white;
-    }
-
-    .sidebar-link.active {
-        background-color: #0056b3; /* Darker blue for active link */
-        color: white;
-    }
-
-    /* Icon Size */
-    .sidebar-link i {
-        font-size: 1.2rem;
-    }
-
-    /* Add Button Styling */
-    .btn-add {
-        color: #007bff;
-        transition: color 0.3s;
-    }
-
-    .btn-add:hover {
-        color: #0056b3;
-    }
-
-    /* Logout Styling */
-    .nav-link.text-danger {
-        color: #dc3545;
-        font-weight: 600;
-    }
-
-    .nav-link.text-danger:hover {
-        background-color: #f8d7da;
-    }
-
-    /* Space between Items */
-    .nav-item {
-        margin-bottom: 10px;
-    }
-
-    /* Ensure Logout Stays at Bottom */
-    .mt-auto {
-        margin-top: auto;
-    }
-</style>

@@ -1,67 +1,67 @@
 
-    /* Sidebar Title */
-    .sidebar-title {
-        padding: 15px;
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #333;
-    }
+/* Sidebar Title */
+.sidebar-title {
+    padding: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
 
-    .sidebar-heading {
-        font-size: 1.2rem;
-        margin-bottom: 20px;
-        color: #007bff;
-    }
+.sidebar-heading {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    color: #007bff;
+}
 
-    /* Section Titles */
-    .sidebar-section-title {
-        font-size: 0.9rem;
-        text-transform: uppercase;
-        color: #888;
-        padding: 10px 0;
-        margin-top: 10px;
-        border-bottom: 1px solid #e9ecef;
-    }
+/* Section Titles */
+.sidebar-section-title {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: #888;
+    padding: 10px 0;
+    margin-top: 10px;
+    border-bottom: 1px solid #e9ecef;
+}
 
-    /* Link Hover Effect */
-    .sidebar-link:hover,
-    .sidebar-link.active {
-        background-color: #007bff;
-        color: white;
-    }
+/* Link Hover Effect */
+.sidebar-link:hover,
+.sidebar-link.active {
+    background-color: #007bff;
+    color: white;
+}
 
-    /* Icon Size */
-    .sidebar-link i {
-        font-size: 1.2rem;
-    }
+/* Icon Size */
+.sidebar-link i {
+    font-size: 1.2rem;
+}
 
-    /* Add Button Styling */
-    .btn-add {
-        color: #007bff;
-        transition: color 0.3s;
-    }
+/* Add Button Styling */
+.btn-add {
+    color: #007bff;
+    transition: color 0.3s;
+}
 
-    .btn-add:hover {
-        color: #0056b3;
-    }
+.btn-add:hover {
+    color: #0056b3;
+}
 
-    /* Logout Styling */
-    .nav-link.text-danger {
-        color: #dc3545;
-        font-weight: 600;
-    }
+/* Logout Styling */
+.nav-link.text-danger {
+    color: #dc3545;
+    font-weight: 600;
+}
 
-    .nav-link.text-danger:hover {
-        background-color: #f8d7da;
-    }
+.nav-link.text-danger:hover {
+    background-color: #f8d7da;
+}
 
-    /* Space between Items */
-    .nav-item {
-        margin-bottom: 5px;
-    }
+/* Space between Items */
+.nav-item {
+    margin-bottom: 5px;
+}
 
-    /* Ensure Logout Stays at Bottom */
-    .mt-auto {
-        margin-top: auto;
-    }
+/* Ensure Logout Stays at Bottom */
+.mt-auto {
+    margin-top: auto;
+}
 
